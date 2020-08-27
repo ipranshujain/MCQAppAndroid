@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        tools:context=".LoginActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:padding="20dp"
+            android:text="Welcome To Quiz App"
+            android:textAlignment="center"
+            android:textColor="#0D1C73"
+            android:textSize="36sp" />
+        <!--    <TextView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="By Pranshu Jain"-->
+        <!--        android:gravity="center"-->
+        <!--        android:paddingRight="20dp"/>-->
+        <!--    <TextView-->
+        <!--        android:id="@+id/emailtext"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:padding="20dp"-->
+        <!--        android:text="Email"-->
+        <!--        android:textAlignment="center"-->
+        <!--        android:textSize="20dp" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="monospace"
+                android:text="Please Login"
+                android:textAlignment="center"
+                android:textColor="#F16A08"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress" />
+
+            <!--    <TextView-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:id="@+id/passwordtext"-->
+            <!--        android:text="Password"-->
+            <!--        android:padding="20dp"-->
+            <!--        android:textAlignment="center"-->
+            <!--        android:textSize="20dp"/>-->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter Password"
+                android:inputType="textPassword" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <!-- under progress :)               <Button-->
+                <!--                    android:id="@+id/forgotbutton"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:backgroundTint="@android:color/white"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:text="Forgot Password?"-->
+                <!--                    android:textColor="#000000"-->
+                <!--                    android:textSize="10sp" />-->
+
+                <Button
+                    android:id="@+id/loginbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#1128D8"
+                    android:padding="10dp"
+                    android:text="Login"
+                    android:onClick="onlogin"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/logingoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#EA1AD5"
+
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:text="Login with Google"
+                android:onClick="googlesignin"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#FFFDFD"
+                android:fontFamily="serif-monospace"
+                android:padding="10dp"
+                android:text="Don't have Account? Sign Up!"
+                android:textColor="#F4009C"
+                android:textSize="18sp"
+                android:onClick="signupintent"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+            android:padding="20dp"
+            android:text="Created by Pranshu Jain"
+            android:textAlignment="center" />
+    </LinearLayout>
+</ScrollView>

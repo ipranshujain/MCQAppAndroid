@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Quiz Section"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="36sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Instruction: \n1. Their are 20 mathematics questions in the quiz.\n2. You have to complete the quiz within 30 minutes.\n3.Every question has different weightage according to its difficulty.\n4. Don't exit the or open recent app during quiz otherwise the quiz will automatically gets end.\n7.Please do not attend any call or switch to other apps, otherwise your quiz will automatically gets end.\n6.Weightage of marks : Easy:5 point, Medium:7 point, Difficult:11 point.\n7. Click on Start button to start the quiz : )" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="#E91E63"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:text="Start!"
+        android:id="@+id/startquiz"
+        android:textColor="#FFFFFF"
+        android:onClick="startquiz"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+</LinearLayout>
+</ScrollView>
