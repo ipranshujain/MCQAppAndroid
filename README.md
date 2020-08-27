@@ -1,0 +1,3 @@
+# MCQAppAndroid
+This is a MCQ app highlighting my following skills: working with nodejs, mern, fragments, designing, login, goggle auth, firebase...
+Please read the .gitignore file to know which files are not included so that you can add them manually. : ).
